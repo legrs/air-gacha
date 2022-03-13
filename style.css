@@ -4,7 +4,7 @@ table,td{
     background-color: rgb(122, 182, 136);
     border-collapse:collapse;
     font-size: 3vh;
-    padding: 0.5vw;
+    padding: 0.3vw;
 }
 table:hover{
     background-color: rgb(162, 202, 171);
