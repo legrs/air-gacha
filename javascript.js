@@ -30,6 +30,7 @@ let new_element = document.createElement('h3');
 new_element.className = 'h33';
 let numberr = document.getElementById('number');
 
+
 function henkou(nb){
     kakuritu.innerHTML = '<h1 id="kakuritu">' + hkakuritu [nb] + '</h1>';
     name.innerHTML = '<h1 id="name">' + hseibun [nb] + '</h1>';
@@ -68,3 +69,12 @@ function Run(){
 
 }
 hbtn.addEventListener('click',Run);
+
+function onkeyup(event){
+    const keycode = event.key;
+   if(keycode === 'Process'){
+       Run();
+   }
+}
+
+document.addEventListener('keyup',onkeyup);
