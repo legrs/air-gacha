@@ -76,5 +76,5 @@ function onkeyup(event){
        Run();
    }
 }
-
-document.addEventListener('keyup',onkeyup);
+let htmldocument = document.getElementById('html_document');
+htmldocument.addEventListener('keyup',onkeyup);
