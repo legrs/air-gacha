@@ -70,11 +70,9 @@ function Run(){
 }
 hbtn.addEventListener('click',Run);
 
-function onkeyup(event){
-    const keycode = event.key;
-   if(keycode === 'Process'){
-       Run();
-   }
-}
-let htmldocument = document.getElementById('html_document');
-htmldocument.addEventListener('keyup',onkeyup);
+document.addEventListener('keydown',function(event) {
+    if(event.key === ' '){
+        Run();
+        console.log("space");
+    }
+});
