@@ -25,10 +25,94 @@ const config = [
 ];
 let history = document.getElementById('history');
 let number = 0;
-
 let new_element = document.createElement('h3');
 new_element.className = 'h33';
 let numberr = document.getElementById('number');
+
+let tisso = document.getElementById('tisso');
+let sanso = document.getElementById('sanso');
+let arugon = document.getElementById('arugon');
+let nisankatanso = document.getElementById('nisankatanso');
+let neon = document.getElementById('neon');
+let heriumu = document.getElementById('heriumu');
+let metan = document.getElementById('metan');
+let kuriputon = document.getElementById('kuriputon');
+let nisankaiou = document.getElementById('nisankaiou');
+let suiso = document.getElementById('suiso');
+let issannkanitisso = document.getElementById('issannkanitisso');
+let kisenon = document.getElementById('kisenon');
+let ozon = document.getElementById('ozon');
+let nisankatisso = document.getElementById('nisankatisso');
+let youso = document.getElementById('youso');
+
+let tisso_kazu = 0; 
+let sanso_kazu = 0; 
+let arugon_kazu = 0; 
+let nisankatanso_kazu = 0; 
+let neon_kazu = 0; 
+let heriumu_kazu = 0; 
+let metan_kazu = 0; 
+let kuriputon_kazu = 0; 
+let nisankaiou_kazu = 0; 
+let suiso_kazu = 0; 
+let issannkanitisso_kazu = 0; 
+let kisenon_kazu = 0; 
+let ozon_kazu = 0; 
+let nisankatisso_kazu = 0; 
+let youso_kazu = 0; 
+
+
+function kazuyaru(result_number){
+    switch(result_number){
+        case 0 :
+            tisso_kazu ++;
+            break;
+        case 1 :
+            sanso_kazu ++;
+            break;
+        case 2 :
+            arugon_kazu ++;
+            break;
+        case 3 :
+            nisankatanso_kazu ++;
+            break;
+        case 4 :
+            neon_kazu ++;
+            break;
+        case 5 :
+            heriumu_kazu ++;
+            break;
+        case 6 :
+            metan_kazu ++;
+            break;
+        case 7 :
+            kuriputon_kazu ++;
+            break;
+        case 8 :
+            nisankaiou_kazu ++;
+            break;
+        case 9 :
+            suiso_kazu ++;
+            break;
+        case 10 :
+            issannkanitisso_kazu ++;
+            break;
+        case 11 :
+            kisenon_kazu ++;
+            break;
+        case 12 :
+            ozon_kazu ++;
+            break;
+        case 13 :
+            nisannkatisso_kazu ++;
+            break;
+        case 14:
+            youso_kazu ++;
+            break;
+    }
+}
+
+
 
 
 function henkou(nb){
@@ -55,6 +139,23 @@ function gachaRun(config) {
     };
 
     henkou(result.id);
+    kazuyaru(result.id);
+    console.log(result.id)
+    tisso.innerHTML ="<td id= 'tisso'         >" +          tisso_kazu + "</td>"                   ;
+    sanso.innerHTML ="<td id= 'sanso'         >" +         sanso_kazu + "</td>"                   ;
+    arugon.innerHTML ="<td id= 'arugon'        >" +         arugon_kazu + "</td>"                   ;
+    nisankatanso.innerHTML ="<td id= 'nisankatanso'  >" +   nisankatanso_kazu + "</td>"                   ;
+    neon.innerHTML ="<td id= 'neon'          >" +           neon_kazu + "</td>"                   ;
+    heriumu.innerHTML ="<td id= 'heriumu'       >" +        heriumu_kazu + "</td>"                   ;
+    metan.innerHTML ="<td id= 'metan'         >" +          metan_kazu + "</td>"                   ;
+    kuriputon.innerHTML ="<td id= 'kuriputon'     >" +      kuriputon_kazu + "</td>"                   ;
+    nisankaiou.innerHTML ="<td id= 'nisankaiou'    >" +     nisankaiou_kazu + "</td>"                   ;
+    suiso.innerHTML ="<td id= 'suiso'         >" +          suiso_kazu + "</td>"                   ;
+    issannkanitisso.innerHTML ="<td id= 'issannkatannso'>" + issannkanitisso_kazu + "</td>"   ;                
+    kisenon.innerHTML ="<td id= 'kisenon'       >" +        kisenon_kazu + "</td>"                   ;
+    ozon.innerHTML ="<td id= 'ozon'          >" +           ozon_kazu + "</td>"                   ;
+    nisankatisso.innerHTML ="<td id= 'nisankatisso'  >" +   nisankatisso_kazu + "</td>"                   ;
+    youso.innerHTML ="<td id= 'youso'         >" +          youso_kazu + "</td>"                   ;
     return result.id;
 }
 function Run(){
