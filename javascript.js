@@ -1,10 +1,16 @@
 let hseibun = ["窒素","酸素","アルゴン","二酸化炭素","ネオン","ヘリウム","メタン","クリプトン","二酸化硫黄","水素","一酸化二窒素","キセノン","オゾン","二酸化窒素","ヨウ素"];
 let hkakuritu = ["78.0840000 %","20.9476000 %","0.9340000 %","0.0410000 %","0.0018180 %","0.0005240 %","0.0001810 %","0.0001140 %","0.0001000 %","0.0000500 %","0.0000320 %<","0.0000087 %","0.0000070 %","0.0000020 %","0.0000010 %"];
 let hkagakusiki = ["N2","O2","Ar","CO2","Ne","He","CH4","Kr","SO2","H2","N2O","Xe","O3","NO2","I2"];
+let hsmallKagakusiki = ["n2","o2","ar","co2","ne","he","ch4","kr","so2","h2","n2o","xe","o3","no2","i2"];
 let kakuritu = document.getElementById("kakuritu");
 let name = document.getElementById("name");
 let kagakusiki = document.getElementById("kagakusiki");
 const hbtn = document.getElementById("hbtn");
+
+const savebtn = document.querySelector("#saveCookie");
+let nowData="";
+const deletebtn = document.querySelector("#deleteCookie");
+
 let random ;
 const config = [
     { id: 0, val: 780840000 },
@@ -165,6 +171,7 @@ function Run(){
     let new_element = document.createElement('h3');
     new_element.className = 'h33';
     new_element.textContent = name.textContent;
+    nowData += hseibun.indexOf(name.textContent).toString(16);
     history.appendChild(new_element);
     numberr.textContent = number;
 
@@ -177,3 +184,11 @@ document.addEventListener('keydown',function(event) {
         console.log("space");
     }
 });
+
+savebtn.addEventListener('click',()=>{
+    document.cookie = `data=${nowData}`;
+    console.log(document.cookie);
+})
+deletebtn.addEventListener('click',()=>{
+    document.cookie = "data=";
+})

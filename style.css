@@ -52,7 +52,7 @@ td:hover{
     height: 20vh;
     width: 20vw;
     position: absolute;
-    top: 70vh;
+    top: 65vh;
     left: 60vw;
     transition: background-color 100ms;
     border: none;
@@ -113,7 +113,7 @@ html,body{
     position: absolute;
     top: 0vh;
     left: 80vw;
-    height: 100vh;
+    height: 89vh;
     width: 20vw;
     text-align: center;
     background-color: rgb(176, 220, 255);
@@ -135,4 +135,42 @@ h3{
     left: 32vw;
     z-index: 1000;
     font-size: 5vh;
+}
+#saveCookie{
+    position: absolute;
+    top: 89.5vh;
+    left: 80.15vw;
+    height: 10vh;
+    width: 19vw;
+    text-align: center;
+    background-color: rgb(121, 207, 121);
+    border: 0px solid;
+    border-radius: 1vh;
+    transition: all 0.1s;
+    color: rgb(255, 255, 255);
+    font-size: 3.5vh;
+    font-weight: 700;
+}
+#saveCookie:hover{
+    cursor: pointer;
+    background-color: rgb(152, 212, 152);
+}
+#deleteCookie{
+    position: absolute;
+    top: 89.5vh;
+    left: 61vw;
+    height: 10vh;
+    width: 19vw;
+    text-align: center;
+    background-color: rgb(121, 207, 121);
+    border: 0px solid;
+    border-radius: 1vh;
+    transition: all 0.1s;
+    color: rgb(255, 255, 255);
+    font-size: 3.5vh;
+    font-weight: 700;
+}
+#deleteCookie:hover{
+    cursor: pointer;
+    background-color: rgb(152, 212, 152);
 }
