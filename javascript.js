@@ -18,7 +18,6 @@ for(let i=0;i < nowData.length;i++){
     let new_element = document.createElement('h3');
     new_element.className = 'h33';
     new_element.textContent = hseibun[String(nowData).charAt(i)];
-    nowData += hseibun.indexOf(hseibun[String(nowData).charAt(i)]).toString(16);
     history.appendChild(new_element);
     numberr.textContent = number;
 }
