@@ -11,7 +11,7 @@ const savebtn = document.querySelector("#saveCookie");
 let nowData="";
 const deletebtn = document.querySelector("#deleteCookie");
 console.log(document.cookie);
-nowData= Number(document.cookie.slice(5));
+nowData= document.cookie.slice(5);
 
 
 let random ;
@@ -70,12 +70,12 @@ let ozon_kazu = 0;
 let nisankatisso_kazu = 0; 
 let youso_kazu = 0; 
 
-for(let i=0;i < String(nowData).length;i++){
+for(let i=0;i < nowData.length;i++){
     number++;
     console.log(number);
     let new_element = document.createElement('h3');
     new_element.className = 'h33';
-    new_element.textContent = hseibun[String(nowData).charAt(i)];
+    new_element.textContent = hseibun[nowData.charAt(i)];
     history.appendChild(new_element);
 }
 number=0;
