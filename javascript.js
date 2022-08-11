@@ -202,5 +202,5 @@ savebtn.addEventListener('click',()=>{
     console.log(document.cookie);
 })
 deletebtn.addEventListener('click',()=>{
-    document.cookie = "data=";
+    document.cookie = "data=; max-age=60*60*24*365";
 })
