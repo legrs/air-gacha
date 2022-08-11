@@ -6,10 +6,23 @@ let kakuritu = document.getElementById("kakuritu");
 let name = document.getElementById("name");
 let kagakusiki = document.getElementById("kagakusiki");
 const hbtn = document.getElementById("hbtn");
-
+let number = 0;
 const savebtn = document.querySelector("#saveCookie");
 let nowData="";
 const deletebtn = document.querySelector("#deleteCookie");
+console.log(document.cookie);
+nowData= Number(document.cookie.slice(5));
+for(i=0;nowData.length<i;i++){
+    number++;
+    console.log(number);
+    let new_element = document.createElement('h3');
+    new_element.className = 'h33';
+    new_element.textContent = hseibun[String(nowData).charAt(i)];
+    nowData += hseibun.indexOf(hseibun[String(nowData).charAt(i)]).toString(16);
+    history.appendChild(new_element);
+    numberr.textContent = number;
+}
+number=0;
 
 let random ;
 const config = [
@@ -30,7 +43,7 @@ const config = [
     { id: 14, val:       10 },
 ];
 let history = document.getElementById('history');
-let number = 0;
+
 let new_element = document.createElement('h3');
 new_element.className = 'h33';
 let numberr = document.getElementById('number');
@@ -148,7 +161,7 @@ function gachaRun(config) {
     kazuyaru(result.id);
     console.log(result.id)
     tisso.innerHTML ="<td id= 'tisso'         >" +          tisso_kazu + "</td>"                   ;
-    sanso.innerHTML ="<td id= 'sanso'         >" +         sanso_kazu + "</td>"                   ;
+    sanso.innerHTML ="<td id= 'sanso'         >" +          sanso_kazu + "</td>"                   ;
     arugon.innerHTML ="<td id= 'arugon'        >" +         arugon_kazu + "</td>"                   ;
     nisankatanso.innerHTML ="<td id= 'nisankatanso'  >" +   nisankatanso_kazu + "</td>"                   ;
     neon.innerHTML ="<td id= 'neon'          >" +           neon_kazu + "</td>"                   ;
