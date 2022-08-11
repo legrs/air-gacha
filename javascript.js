@@ -198,7 +198,7 @@ document.addEventListener('keydown',function(event) {
 });
 
 savebtn.addEventListener('click',()=>{
-    document.cookie = `data=${nowData}`;
+    document.cookie = `data=${nowData}; max-age=60*60*24*365`;
     console.log(document.cookie);
 })
 deletebtn.addEventListener('click',()=>{
