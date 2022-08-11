@@ -77,7 +77,6 @@ for(let i=0;i < String(nowData).length;i++){
     new_element.className = 'h33';
     new_element.textContent = hseibun[String(nowData).charAt(i)];
     history.appendChild(new_element);
-    numberr.textContent = number;
 }
 number=0;
 
