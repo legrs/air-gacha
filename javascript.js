@@ -12,16 +12,7 @@ let nowData="";
 const deletebtn = document.querySelector("#deleteCookie");
 console.log(document.cookie);
 nowData= Number(document.cookie.slice(5));
-for(let i=0;i < String(nowData).length;i++){
-    number++;
-    console.log(number);
-    let new_element = document.createElement('h3');
-    new_element.className = 'h33';
-    new_element.textContent = hseibun[String(nowData).charAt(i)];
-    history.appendChild(new_element);
-    numberr.textContent = number;
-}
-number=0;
+
 
 let random ;
 const config = [
@@ -79,6 +70,16 @@ let ozon_kazu = 0;
 let nisankatisso_kazu = 0; 
 let youso_kazu = 0; 
 
+for(let i=0;i < String(nowData).length;i++){
+    number++;
+    console.log(number);
+    let new_element = document.createElement('h3');
+    new_element.className = 'h33';
+    new_element.textContent = hseibun[String(nowData).charAt(i)];
+    history.appendChild(new_element);
+    numberr.textContent = number;
+}
+number=0;
 
 function kazuyaru(result_number){
     switch(result_number){
