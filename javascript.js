@@ -12,7 +12,7 @@ let nowData="";
 const deletebtn = document.querySelector("#deleteCookie");
 console.log(document.cookie);
 nowData= Number(document.cookie.slice(5));
-for(i=0;i < nowData.length;i++){
+for(let i=0;i < nowData.length;i++){
     number++;
     console.log(number);
     let new_element = document.createElement('h3');
