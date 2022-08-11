@@ -191,4 +191,5 @@ savebtn.addEventListener('click',()=>{
 })
 deletebtn.addEventListener('click',()=>{
     document.cookie = "data=";
+    nowData="";
 })
