@@ -78,6 +78,36 @@ for(let i=0;i < nowData.length;i++){
     new_element.textContent = hseibun[nowData.charAt(i)];
     history.appendChild(new_element);
 }
+tisso_kazu =           (text.match( /1/g) || [] ).length; 
+sanso_kazu =           (text.match( /2/g) || [] ).length; 
+arugon_kazu =          (text.match( /3/g) || [] ).length; 
+nisankatanso_kazu =    (text.match( /4/g) || [] ).length; 
+neon_kazu =            (text.match( /5/g) || [] ).length; 
+heriumu_kazu =         (text.match( /6/g) || [] ).length; 
+metan_kazu =           (text.match( /7/g) || [] ).length; 
+kuriputon_kazu =       (text.match( /8/g) || [] ).length; 
+nisankaiou_kazu =      (text.match( /9/g) || [] ).length; 
+suiso_kazu =           (text.match( /10/g) || [] ).length; 
+issannkanitisso_kazu = (text.match( /11/g) || [] ).length; 
+kisenon_kazu =         (text.match( /12/g) || [] ).length; 
+ozon_kazu =            (text.match( /13/g) || [] ).length; 
+nisankatisso_kazu =    (text.match( /14/g) || [] ).length; 
+youso_kazu =           (text.match( /15/g) || [] ).length; 
+tisso.innerHTML ="<td id= 'tisso'         >" +          tisso_kazu + "</td>"                   ;
+sanso.innerHTML ="<td id= 'sanso'         >" +          sanso_kazu + "</td>"                   ;
+arugon.innerHTML ="<td id= 'arugon'        >" +         arugon_kazu + "</td>"                   ;
+nisankatanso.innerHTML ="<td id= 'nisankatanso'  >" +   nisankatanso_kazu + "</td>"                   ;
+neon.innerHTML ="<td id= 'neon'          >" +           neon_kazu + "</td>"                   ;
+heriumu.innerHTML ="<td id= 'heriumu'       >" +        heriumu_kazu + "</td>"                   ;
+metan.innerHTML ="<td id= 'metan'         >" +          metan_kazu + "</td>"                   ;
+kuriputon.innerHTML ="<td id= 'kuriputon'     >" +      kuriputon_kazu + "</td>"                   ;
+nisankaiou.innerHTML ="<td id= 'nisankaiou'    >" +     nisankaiou_kazu + "</td>"                   ;
+suiso.innerHTML ="<td id= 'suiso'         >" +          suiso_kazu + "</td>"                   ;
+issannkanitisso.innerHTML ="<td id= 'issannkatannso'>" + issannkanitisso_kazu + "</td>"   ;                
+kisenon.innerHTML ="<td id= 'kisenon'       >" +        kisenon_kazu + "</td>"                   ;
+ozon.innerHTML ="<td id= 'ozon'          >" +           ozon_kazu + "</td>"                   ;
+nisankatisso.innerHTML ="<td id= 'nisankatisso'  >" +   nisankatisso_kazu + "</td>"                   ;
+youso.innerHTML ="<td id= 'youso'         >" +          youso_kazu + "</td>"                   ;
 number=0;
 
 function kazuyaru(result_number){
